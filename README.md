@@ -3,7 +3,7 @@ This is the implementation of our paper "[Sequential Prediction of Social Media 
 
 ## Dataset
 
-To successfully test performance, we created [TPIC dataset](https://github.com/social-media-prediction/TPIC2017), a temporal popularity image collection dataset. 
+To successfully test performance, we created [TPIC Dataset](https://github.com/social-media-prediction/TPIC2017), a temporal popularity image collection dataset. 
 
 ## Overview
 
