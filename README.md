@@ -1,21 +1,19 @@
 # DTCN
 This is the implementation of our paper "[Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks](https://www.ijcai.org/Proceedings/2017/427)".
 
-# Dataset
+## Dataset
 
 To successfully test performance, we created [TPIC dataset](https://github.com/social-media-prediction/TPIC2017), a temporal popularity image collection dataset. 
 
-# Model
+## Overview
 
 Our DTCN contains three main components, from embedding, learning to predicting. With a joint embedding network, we obtain a unified deep representation of multi-modal user-post data in a common embedding space. Then, based on the embedded data sequence over time, temporal context learning attempts to recurrently learn two adaptive temporal contexts for sequential popularity. Finally, a novel temporal attention is designed to predict new popularity (the popularity of a new user-post pair) with temporal coherence across multiple time-scales.
 
 ![DTCN framework](figure/framework.jpg)
 
-# Code
-
-The code is pure python. Keras is chosen to be the deep learning library here. Environment is configured by Anaconda. The environment file is saved as "environment.yml".
 
 ## Environment
+The code is pure python. Keras is chosen to be the deep learning library here. Environment is configured by Anaconda. The environment file is saved as "environment.yml".
 
 - Ubuntu 16.04
 - Python 2.7
