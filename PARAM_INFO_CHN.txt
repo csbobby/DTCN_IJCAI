@@ -1,0 +1,27 @@
+主要参数：
+-feature_path（visual 数据的路径)
+-meta_path（meta 数据的路径, 如果不指定，将启动单流算法)
+-label_path（label的数据路径)
+-algorithm（从 LSTM,GRU,CLSTM,CGRU,MLP,SVR 中选择一个)
+
+公共参数(Optional)：
+-gpu_id（程序所使用的GPU ID，有GPU的情况下可调节)
+-data_split_part（数据切分个数，一般不需要改)
+-train_set_partial（training过程中所用到的数据切分个数，一般不需要改)
+-total_cross_validation（cross validation的次数，一般不需要改)
+-dataset_name（给输入数据的别名，默认是MYDATASET，一般不需要改）
+-nb_epoch（epoch的个数，一般不需要改)
+-batch_size（batch_size，一般不需要改)
+
+LSTM/CLSTM/GRU的参数（Optional）：
+-hidden_layer（神经网络层的hidden layer数)
+-timestep（RNN所用到的timestep数量)
+-masking_enabled（是否开启Masking层，输入需为：y 或者 n)
+
+MLP的参数（Optional）：
+-first_layer_output（第一层的输出维度）
+-middle_layer_output（中间层的输出维度）
+
+使用范例：
+python main.py -feature_path /path/to/resnet.txt -meta_path /path/to/user.txt -label_path /path/to/label.txt -algorithm GRU -masking_enabled y -gpu_id 1
+
