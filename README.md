@@ -21,6 +21,7 @@ The code is pure python. Keras is chosen to be the deep learning library here. E
 - Python 2.7
 - Cuda 10.0
 - cudnn 7.6.5
+
 ## Setup
 ```bash
 conda env create -f environment.yml
@@ -68,7 +69,7 @@ python main.py \
 
 # Citation
 
-```latex
+```Bibtex
 @inproceedings{Wu2017DTCN,
   title={Sequential Prediction of Social Media Popularity with Deep Temporal Context Networks},
   author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and Jintao, Li and Mei, Tao},
@@ -77,4 +78,4 @@ python main.py \
   location = {Melbourne, Australia}}
 ```
 
-Please [concat us](social.media.prediction@gmail.com) if you have further questions or cooporations
+Please concat us (social.media.prediction@gmail.com) if you have further questions or cooporations
