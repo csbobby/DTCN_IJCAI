@@ -65,7 +65,6 @@ python main.py \
 -dual_lstm n
 ```
 
-# Result
 
 # Citation
 
